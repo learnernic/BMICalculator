@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="description" content="BMI体重指数计算器 - 免费在线计算您的BMI体重指数">
+    <meta name="keywords" content="BMI,体重指数,BMI计算,体重指数计算,BMI体重指数计算,BMI体重指数计算器">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI体重指数计算器</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>BMI体重指数计算器</h1>
+    </header>
+
+    
+    <main>
+      <div class="container">
+        <div class="bmi-calculator">
+
+          <div class="body-info-row">
+            <label class="input-label" for="height-input">身高:</label>
+            <input type="number" id="height-input" name="height" placeholder="" oninput="if(value<0)value=0" />
+            <div class="unit">厘米</div>
+          </div>
+          
+          <div class="body-info-row">
+            <label class="input-label" for="weight-input">体重:</label>
+            <input type="number" id="weight-input" name="weight" placeholder="" oninput="if(value<0)value=0" />
+            <div class="unit">斤</div>
+          </div>
+  
+          <button type="button" id="calculate-button">开始计算</button>
+  
+          <p class="result" id="result"></p>
+          <p class="suggestion" id="suggestion"></p>
+        </div>
+
+        <div class="bmi-info">
+          <section class="bmi-explanation">
+            <h2>什么是BMI？</h2>
+            <p>BMI 是 Body Mass Index 的缩写，可以翻译为身体质量指数，或者简称为体重指数，它是一种常用于评估一个人体重相对于身高的一种指标。</p>
+          </section>
+    
+          <section class="bmi-calculation-priciple">
+            <h2>BMI体重指数是怎么计算出来的？</h2>
+            <p>BMI = 体重(kg) / 身高(m)的平方</p>
+          </section>
+    
+          <section class="bmi-reference-range">
+            <h2>BMI体重指数参考范围</h2>
+            <ul>
+              <li>偏瘦: &lt; 18.5</li>
+              <li>健康体重: 18.5 - 24.9</li>
+              <li>超重: 25 - 29.9</li>
+              <li>肥胖: &ge; 30</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
