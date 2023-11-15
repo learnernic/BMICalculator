@@ -9,7 +9,6 @@ const BMIValue = {
 document.getElementById('calculate-button').addEventListener('click', calculateBMI);
 
 function calculateBMI() {
-  console.log('hello');
   let height = document.getElementById('height-input').value;
   let weight = document.getElementById('weight-input').value;
 
